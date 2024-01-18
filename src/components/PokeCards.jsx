@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Backgrounds from "../utils/Backgrounds";
+import Backgrounds from "../../utils/Backgrounds";
 
 const PokeCards = ({ name, id, image, height, weight, type, onClick }) => {
   return (
