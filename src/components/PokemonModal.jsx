@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-
-import Backgrounds from "../../utils/Backgrounds";
-import BASE_IMG_URL from "../../utils/constants";
+import Backgrounds from '../utils/Backgrounds'
+import BASE_IMG_URL from "../utils/constants";
 
 const PokemonModal = ({ isOpen, onClose, pokemon }) => {
   if (!isOpen) {
@@ -41,28 +40,28 @@ const PokemonModal = ({ isOpen, onClose, pokemon }) => {
             <table className="my-3">
               <tbody className="w-30 flex flex-col justify-center items-start">
                 <tr className="flex">
-                  <td className="font-bold mr-2">HP: </td>{" "}
-                  <span> {pokemon.stats[0].base_stat}</span>
+                  <td className="font-bold mr-2">HP:</td>
+                  <td>{pokemon.stats[0].base_stat}</td>
                 </tr>
-                <tr  className="flex">
-                  <td className="font-bold mr-2">Attack:</td>{" "}
-                  <span> {pokemon.stats[1].base_stat} </span>
+                <tr className="flex">
+                  <td className="font-bold mr-2">Attack:</td>
+                  <td>{pokemon.stats[1].base_stat}</td>
                 </tr>
-                <tr  className="flex">
-                  <td className="font-bold mr-2">Defense:</td>{" "}
-                  <span> {pokemon.stats[2].base_stat}</span>
+                <tr className="flex">
+                  <td className="font-bold mr-2">Defense:</td>
+                  <td>{pokemon.stats[2].base_stat}</td>
                 </tr>
-                <tr  className="flex">
-                  <td className="font-bold mr-2">Special Attack:</td>{" "}
-                  <span> {pokemon.stats[3].base_stat}</span>
+                <tr className="flex">
+                  <td className="font-bold mr-2">Special Attack:</td>
+                  <td>{pokemon.stats[3].base_stat}</td>
                 </tr>
-                <tr  className="flex">
-                  <td className="font-bold mr-2"> Special Defense:</td>{" "}
-                  <span> {pokemon.stats[4].base_stat}</span>
+                <tr className="flex">
+                  <td className="font-bold mr-2">Special Defense:</td>
+                  <td>{pokemon.stats[4].base_stat}</td>
                 </tr>
-                <tr  className="flex">
-                  <td className="font-bold mr-2">Speed:</td>{" "}
-                  <span> {pokemon.stats[5].base_stat}</span>
+                <tr className="flex">
+                  <td className="font-bold mr-2">Speed:</td>
+                  <td>{pokemon.stats[5].base_stat}</td>
                 </tr>
               </tbody>
             </table>
